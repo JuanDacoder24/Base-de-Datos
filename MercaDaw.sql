@@ -60,3 +60,7 @@ INSERT INTO productos (referencia, nombre, descripcion, cantidad, precio, descue
 VALUES ('LIB002', 'Diccionario', 'Diccionario enciclopédico ilustrado', 15, 49.99, 5, 4, true, 5);
 
 select * from productos;
+
+select p.id, p.referencia, p.nombre, p.descripcion, p.cantidad, p.precio, p.descuento, p.iva, tipo_producto.id_tipo, tipo_producto.nombre
+from productos p 
+inner join tipo_producto on p.id_tipo = tipo_producto.id_tipo;
