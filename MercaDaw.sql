@@ -64,3 +64,4 @@ select * from productos;
 select p.id, p.referencia, p.nombre, p.descripcion, p.cantidad, p.precio, p.descuento, p.iva, tipo_producto.id_tipo, tipo_producto.nombre
 from productos p 
 inner join tipo_producto on p.id_tipo = tipo_producto.id_tipo;
+
